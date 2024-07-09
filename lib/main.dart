@@ -1,4 +1,4 @@
-import 'package:course_selling_app/view/fitness_screen.dart';
+import 'package:course_selling_app/View/fitness_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
