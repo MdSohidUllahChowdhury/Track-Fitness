@@ -7,8 +7,8 @@ static customAppBar(
   IconData leftBottomIcon,
 ) {
   return AppBar(
-    toolbarHeight: 37,
-    backgroundColor: Colors.black,
+    toolbarHeight:40,
+    backgroundColor: Colors.transparent,
     leading: IconButton(
         onPressed: leftBottomPath,
         icon: Icon(
