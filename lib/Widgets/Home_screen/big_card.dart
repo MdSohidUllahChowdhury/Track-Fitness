@@ -1,4 +1,5 @@
-import 'package:track_fitness/view/detailes_screen.dart';
+import 'package:get/get.dart';
+import 'package:track_fitness/View/video_screen.dart';
 import 'package:flutter/material.dart';
 
 class BigCard extends StatelessWidget {
@@ -57,11 +58,7 @@ class BigCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(26)),
                 child: TextButton(
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const FitnessDetails(),
-                          ));
+                      Get.to(() => const VideoScreen());
                     },
                     child: const Text(
                       'Start Now',
@@ -78,7 +75,7 @@ class BigCard extends StatelessWidget {
           decoration: const BoxDecoration(
               image: DecorationImage(
                   image: AssetImage(
-            'lib/Assets/logo.jpg',
+            'lib/Assets/images/logo.jpg',
           ))),
         )
       ],
