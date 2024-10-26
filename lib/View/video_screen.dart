@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:track_fitness/Widgets/Home_screen/app_bar.dart';
 import 'package:track_fitness/Widgets/Video_screen/bottom.dart';
+import 'package:track_fitness/Widgets/Video_screen/play_list.dart';
 
 class VideoScreen extends StatelessWidget {
   const VideoScreen({super.key});
@@ -49,35 +50,13 @@ class VideoScreen extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(
-            height: 15,
-          ),
+          const SizedBox(height: 15),
+         
           Expanded(
             child: ListView.builder(
               itemCount: 25,
               itemBuilder: (context, index) {
-                return ListTile(minTileHeight: 50,
-                    title: Container(
-                      height:80,
-                      width: 5,
-                      color: Colors.white,
-                      
-                    ),
-                    subtitle: const Text(
-                      'Duration: 30 minutes',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w800),
-                    ),
-                    trailing: const Text(
-                      'Sets: 3',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12,
-                          fontWeight: FontWeight.w800),
-                    ),
-                    onTap: () {});
+                return playList();
               },
             ),
           )
