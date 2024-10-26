@@ -31,7 +31,7 @@ flutter:
   assets:
     - lib/Assets/images/
 
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: g_font
+      fonts:
+        - asset: lib/Assets/fonts/g_font.ttf

@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
 import 'package:track_fitness/View/health_screen.dart';
-import 'package:track_fitness/Widgets/Home_screen/app_bar.dart';
-import 'package:track_fitness/Widgets/Home_screen/big_card.dart';
-import 'package:track_fitness/Widgets/Home_screen/side_bar.dart';
-import 'package:track_fitness/Widgets/Home_screen/small_card.dart';
+import 'package:track_fitness/Controller/Home_screen/app_bar.dart';
+import 'package:track_fitness/Controller/Home_screen/big_card.dart';
+import 'package:track_fitness/Controller/Home_screen/side_bar.dart';
+import 'package:track_fitness/Controller/Home_screen/small_card.dart';
 import 'package:flutter/material.dart';
 
 class Fitness extends StatefulWidget {

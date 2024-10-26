@@ -58,7 +58,7 @@ class BigCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(26)),
                 child: TextButton(
                     onPressed: () {
-                      Get.to(() => const VideoScreen());
+                      Get.to(() => VideoScreen());
                     },
                     child: const Text(
                       'Start Now',

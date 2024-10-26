@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:track_fitness/Widgets/Home_screen/app_bar.dart';
-import 'package:track_fitness/Widgets/Video_screen/bottom.dart';
-import 'package:track_fitness/Widgets/Video_screen/play_list.dart';
+import 'package:track_fitness/Controller/Home_screen/app_bar.dart';
+import 'package:track_fitness/Controller/Video_screen/bottom.dart';
+import 'package:track_fitness/Controller/Video_screen/data_insart.dart';
+import 'package:track_fitness/Controller/Video_screen/play_list.dart';
 
 class VideoScreen extends StatelessWidget {
-  const VideoScreen({super.key});
-
+   VideoScreen({super.key});
+  final dataCalling = data_insart;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: MediaQuery.sizeOf(context).height * .35,
+            height: MediaQuery.sizeOf(context).height * .30,
             decoration: const BoxDecoration(
                 color: Color.fromARGB(255, 203, 247, 9),
                 borderRadius: BorderRadius.only(
@@ -50,13 +52,32 @@ class VideoScreen extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 15),
-         
+          const SizedBox(height: 4,),
+          const SizedBox(
+            height:30,
+            child: Row(
+              children: [
+                Text(
+                  '   Playlist:1 Abs & Legs',
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(width: 4,),
+                Icon(Icons.playlist_add_circle_sharp,color: Colors.white,size:24,)
+              ],
+            ),
+          ),
           Expanded(
             child: ListView.builder(
-              itemCount: 25,
+              itemCount: dataCalling.length,
               itemBuilder: (context, index) {
-                return playList();
+               final data = dataCalling[index];
+              return playList(
+                data.video_title, 
+                data.video_duration
+                );
               },
             ),
           )
