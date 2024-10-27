@@ -1,11 +1,14 @@
+// ignore_for_file: non_constant_identifier_names
+
 class ModelPlayList {
-  final String video_title;
+  final String title;
   final String video_duration;
-  final String? video_image;
-  void Function()? video_path;
+  final String video_thumbnail;
+  final Function()? video_path;
 
   ModelPlayList(
-      {required this.video_title,
+      {required this.title,
       required this.video_duration,
-      this.video_image});
+      required this.video_thumbnail,
+       this.video_path});
 }

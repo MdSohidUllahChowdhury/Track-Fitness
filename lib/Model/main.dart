@@ -11,7 +11,7 @@ void main() {
     child: GetMaterialApp(
         theme: ThemeData(fontFamily: 'g_font'),
         debugShowCheckedModeBanner: false,
-        home: VideoScreen() //Fitness(),
+        home:const VideoScreen() //Fitness(),
         ),
   )));
 }
