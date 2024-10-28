@@ -11,14 +11,13 @@ dependencies:
   flutter:
     sdk: flutter
 
-  clay_containers: ^0.3.4
   fl_chart: ^0.68.0
   flutter_screenutil: ^5.9.3
   carousel_slider: ^5.0.0
   get: ^4.6.6
-  cached_network_image: ^3.4.1
   flutter_animate: ^4.5.0
   http: ^1.2.2
+  video_player: ^2.9.2
 
 dev_dependencies:
   flutter_test:

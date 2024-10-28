@@ -25,7 +25,7 @@ Widget nonPlayer(BuildContext context) {
             Get.back();
           }, //leftBottomPath,
           Icons.info_outline,
-          Icons.arrow_back_ios,
+          Icons.arrow_circle_left_outlined,
         ),
         const Center(
             child: Text(

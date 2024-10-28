@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
-import 'package:track_fitness/View/health_screen.dart';
+import 'package:track_fitness/Controller/Home_screen/heading_text.dart';
+import 'package:track_fitness/View/health_tips_screen.dart';
 import 'package:track_fitness/Controller/Home_screen/app_bar.dart';
 import 'package:track_fitness/Controller/Home_screen/big_card.dart';
 import 'package:track_fitness/Controller/Home_screen/side_bar.dart';
@@ -29,29 +30,14 @@ class _LearningState extends State<Fitness> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                'Make Your',
-                style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    letterSpacing: 1.2),
-              ),
-              const Text(
-                'Body Perfect',
-                style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.2,
-                    color: Color.fromARGB(255, 203, 247, 9)),
-              ),
+              Heading.headingText(),
+              Heading.subHeadingText(),
               const SizedBox(height: 6),
               const BigCard(),
-              booking('  Health Tips', 
+              booking(
+                '  Health Tips', 
                 Icons.health_and_safety_rounded, 
-                ()=>Get.to(() => const FitnessDetails())
-                
-                ),
+                ()=>Get.to(() => const FitnessDetails())),
               const SizedBox(height: 12),
               const SmallTwoCard(),
               const SizedBox(height: 12),

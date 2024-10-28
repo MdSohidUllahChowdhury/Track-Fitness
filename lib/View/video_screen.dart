@@ -47,7 +47,7 @@ class _VideoScreenState extends State<VideoScreen> {
               return playList(
                 data.title, 
                 data.video_duration, 
-                data.video_thumbnail);
+                );
               },
             ),
           )

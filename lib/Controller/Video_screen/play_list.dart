@@ -1,8 +1,9 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:get/get.dart';
+import 'package:track_fitness/View/video_player.dart';
 
-Widget playList(String title,String duration,String thumbile) {
+Widget playList(String title,String duration,) {
   return Animate(
   child: Expanded(
     child: Container(
@@ -24,12 +25,13 @@ Widget playList(String title,String duration,String thumbile) {
           ),
       child: Row(
         children: [
-          
           CircleAvatar(
-            backgroundImage: CachedNetworkImageProvider(thumbile),
+            backgroundColor: Colors.redAccent,
             radius: 45,
             child: IconButton(
-                onPressed: (){},
+                onPressed: (){
+                  Get.to(()=>const VideoPlayer());
+                },
                 icon: const Icon(Icons.play_circle_outline_outlined,
                   color: Colors.black,size: 45,)
                 ),

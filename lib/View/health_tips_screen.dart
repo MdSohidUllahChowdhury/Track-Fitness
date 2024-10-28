@@ -40,8 +40,8 @@ class _FitnessDetailsState extends State<FitnessDetails> {
       'index': 'FR',
     },
   ];
-  // ignore: non_constant_identifier_names
-  List<String> slider_contend = [
+  
+  List<String> slidercontend = [
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9uOLe6qkFSDc48cLCjsWInqWrLSkiB7IDNj8CUVgTbQ&s',
     'https://cdn.dribbble.com/users/2951446/screenshots/6361953/smuti-slider_still_2x.gif?resize=400x0',
     'https://3.bp.blogspot.com/-LKgDoJZfEyU/UBKXUIALobI/AAAAAAAAAjk/dafHbDYzH_w/s1600/healthy+food.jpg',
@@ -54,8 +54,7 @@ class _FitnessDetailsState extends State<FitnessDetails> {
     return Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
-          toolbarHeight: 37,
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.transparent,
           leading: IconButton(
               onPressed: () {
                 Navigator.pop(context);
@@ -63,21 +62,21 @@ class _FitnessDetailsState extends State<FitnessDetails> {
               icon: const Icon(
                 Icons.arrow_circle_left_outlined,
                 color: Colors.white,
-                size: 30,
+                size: 40,
               )),
-          actions: [
-            IconButton(
+          actions: [IconButton(
                 onPressed: () {},
                 icon: const Icon(
                   Icons.notifications_rounded,
-                  size: 30,
+                  size: 40,
                 ))
           ],
         ),
         body: Padding(
             padding: const EdgeInsets.all(8.0),
             child:
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Column(crossAxisAlignment: CrossAxisAlignment.start, 
+              children: [
               const Text(
                 'Health',
                 style: TextStyle(
@@ -92,17 +91,20 @@ class _FitnessDetailsState extends State<FitnessDetails> {
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 203, 247, 9)),
               ),
+              const SizedBox(height: 12),
               CarouselSlider.builder(
-                  itemCount: slider_contend.length,
-                  itemBuilder: (context, index, realIndex) => Container(
+                  itemCount: slidercontend.length,
+                  itemBuilder: (context, index, realIndex) 
+                  => Container(
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                            //color: Colors.amber,
                             image: DecorationImage(
-                                image: NetworkImage(slider_contend[index]),
-                                fit: BoxFit.cover)),
+                                image: NetworkImage(slidercontend[index]),
+                                fit: BoxFit.cover)
+                                ),
                       ),
-                  options: CarouselOptions(
+                  options: 
+                  CarouselOptions(
                     height: 170,
                     aspectRatio: 16 / 9,
                     viewportFraction: 0.8,
@@ -117,7 +119,9 @@ class _FitnessDetailsState extends State<FitnessDetails> {
                     enlargeCenterPage: true,
                     enlargeFactor: 0.3,
                     scrollDirection: Axis.horizontal,
-                  )),
+                   )
+                  ),
+              const SizedBox(height:30),
               Container(
                 margin: const EdgeInsets.only(top: 15),
                 padding: const EdgeInsets.all(10),
@@ -142,14 +146,19 @@ class _FitnessDetailsState extends State<FitnessDetails> {
                     ),
                     SizedBox(
                       height: 150,
-                      child: BarChart(BarChartData(
+                      child: BarChart(
+                        BarChartData(
                         maxY: 100,
                         minY: 0,
-                      )),
+                       )
+                      ),
                     )
                   ],
                 ),
               ),
-            ])));
+            ]
+            )
+            )
+            );
   }
 }
