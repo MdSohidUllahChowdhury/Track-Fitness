@@ -1,4 +1,4 @@
-import 'package:track_fitness/Controller/Video_screen/model_play_list.dart';
+import 'package:track_fitness/Widget/Video_screen/model_play_list.dart';
 
 List<ModelPlayList> dataInsart = [
   

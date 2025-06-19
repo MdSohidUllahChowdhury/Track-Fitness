@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:track_fitness/Controller/Home_screen/app_bar.dart';
-import 'package:track_fitness/Controller/Video_screen/bottom.dart';
+import 'package:track_fitness/Widget/Home_screen/app_bar.dart';
+import 'package:track_fitness/Widget/Video_screen/bottom.dart';
 
 Widget nonPlayer(BuildContext context) {
   return Container(
