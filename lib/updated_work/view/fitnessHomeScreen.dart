@@ -1,11 +1,18 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:get/utils.dart';
 import 'package:track_fitness/updated_work/view/worksOutList.dart';
 
 class Fitnesshomescreen extends StatelessWidget {
   const Fitnesshomescreen({super.key});
-
+  void exitApp() {
+    if (Platform.isAndroid) {
+      SystemNavigator.pop();
+    } else if (Platform.isIOS) {
+      exit(0);
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,12 +51,11 @@ class Fitnesshomescreen extends StatelessWidget {
       
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Action for the button
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Floating Action Button Pressed')),
-          );
+          //SystemNavigator.pop();
+          //exit(0);
+          exitApp();
         },
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.exit_to_app_rounded),
       ),
     );
   }
