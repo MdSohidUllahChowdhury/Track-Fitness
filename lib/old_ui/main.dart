@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:track_fitness/View/home_screen.dart';
+import 'package:track_fitness/old_ui/View/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

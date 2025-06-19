@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:track_fitness/Widget/Video_screen/data_insart.dart';
-import 'package:track_fitness/Widget/Video_screen/nonplayer.dart';
-import 'package:track_fitness/Widget/Video_screen/play_list.dart';
+import 'package:track_fitness/old_ui/Widget/Video_screen/data_insart.dart';
+import 'package:track_fitness/old_ui/Widget/Video_screen/nonplayer.dart';
+import 'package:track_fitness/old_ui/Widget/Video_screen/play_list.dart';
 
 class VideoScreen extends StatefulWidget {
    const VideoScreen({super.key});

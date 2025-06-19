@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:get/get.dart';
-import 'package:track_fitness/View/video_player.dart';
+import 'package:track_fitness/old_ui/View/video_player.dart';
 
 Widget playList(String title,String duration,) {
   return Animate(

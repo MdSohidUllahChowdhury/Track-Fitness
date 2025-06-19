@@ -33,9 +33,9 @@ flutter:
   uses-material-design: true
 
   assets:
-    - lib/Assets/images/
+    - lib/old_ui/Assets/images/
 
   fonts:
     - family: g_font
       fonts:
-        - asset: lib/Assets/fonts/g_font.ttf
+        - asset: lib/old_ui/Assets/fonts/g_font.ttf

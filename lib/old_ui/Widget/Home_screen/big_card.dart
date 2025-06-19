@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:track_fitness/View/video_screen.dart';
+import 'package:track_fitness/old_ui/View/video_screen.dart';
 import 'package:flutter/material.dart';
 
 class BigCard extends StatelessWidget {
