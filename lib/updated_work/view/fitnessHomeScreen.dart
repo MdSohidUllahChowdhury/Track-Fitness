@@ -6,6 +6,8 @@ import 'package:track_fitness/updated_work/view/worksOutList.dart';
 
 class Fitnesshomescreen extends StatelessWidget {
   const Fitnesshomescreen({super.key});
+  
+  //* Function to exit the app
   void exitApp() {
     if (Platform.isAndroid) {
       SystemNavigator.pop();
@@ -13,6 +15,7 @@ class Fitnesshomescreen extends StatelessWidget {
       exit(0);
     }
   }
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(

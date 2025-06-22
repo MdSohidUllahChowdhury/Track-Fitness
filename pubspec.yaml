@@ -23,6 +23,13 @@ dependencies:
 
   # Media
   video_player: ^2.9.2
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: 'asset/fitnessLogo.png'
+  adaptive_icon_background: "#FFFFFF"
 
 dev_dependencies:
   flutter_test:
