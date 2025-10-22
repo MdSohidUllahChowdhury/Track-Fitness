@@ -1,11 +1,11 @@
 {
-    "name": "course_selling_app",
-    "short_name": "course_selling_app",
+    "name": "GymJournal",
+    "short_name": "GymJournal",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "A modern and intuitive Flutter app for tracking fitness activities and progress.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

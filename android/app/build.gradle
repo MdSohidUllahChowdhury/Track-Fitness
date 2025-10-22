@@ -23,7 +23,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "com.example.track_fitness"
+    namespace "com.example.gymjournal"
     compileSdk flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
@@ -42,7 +42,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.track_fitness"
+        applicationId "com.example.gymjournal"
         
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion

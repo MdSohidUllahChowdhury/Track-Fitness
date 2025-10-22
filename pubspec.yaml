@@ -1,4 +1,4 @@
-name: track_fitness
+name: gym_journal
 description: A modern and intuitive Flutter app for tracking fitness activities and progress.
 publish_to: "none" # This prevents the package from being accidentally published to pub.dev.
 
@@ -11,25 +11,10 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # UI & Charts
-  fl_chart: ^0.68.0
-  flutter_screenutil: ^5.9.3
-  carousel_slider: ^5.0.0
-  flutter_animate: ^4.5.0
-
-  # State Management & Networking
   get: ^4.6.6
-  http: ^1.2.2
-
-  # Media
-  video_player: ^2.9.2
-  flutter_launcher_icons: ^0.14.4
-
-flutter_launcher_icons:
-  android: true
-  ios: true
-  image_path: 'asset/fitnessLogo.png'
-  adaptive_icon_background: "#FFFFFF"
+  flutter_svg: ^2.0.7
+  shared_preferences: ^2.1.2
+  google_fonts: ^5.0.0
 
 dev_dependencies:
   flutter_test:
@@ -40,9 +25,4 @@ flutter:
   uses-material-design: true
 
   assets:
-    - lib/old_ui/Assets/images/
-
-  fonts:
-    - family: g_font
-      fonts:
-        - asset: lib/old_ui/Assets/fonts/g_font.ttf
+    - assets/icons/
