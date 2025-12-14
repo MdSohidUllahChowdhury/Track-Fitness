@@ -1,7 +1,5 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:gym_journal/view/splash_screen.dart';
 
 void main() {
@@ -12,8 +10,9 @@ void main() {
       primaryColor: const Color(0xFF6A1B9A),
       scaffoldBackgroundColor: const Color(0xFF0B1020),
       cardColor: const Color(0xFF121426),
-      textTheme: GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme),
-      appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent, elevation: 0),
+      //textTheme: GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme),
+      appBarTheme:
+          const AppBarTheme(backgroundColor: Colors.transparent, elevation: 0),
     ),
     home: const SplashScreen(),
   ));
